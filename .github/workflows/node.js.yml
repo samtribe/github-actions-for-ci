@@ -8,9 +8,9 @@ jobs:
           name: webpack artifacts
           path: public/
 
-    needs: build
+needs: build
 
-    steps:
+steps:
       - uses: actions/checkout@v2
       - name: npm install and build webpack
         run: |
